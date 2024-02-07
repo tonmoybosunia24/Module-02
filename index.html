@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-02</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/14027/14027063.png" type="image/x-icon">
+    <style> /* এইচটিএমএল এর হেড এর ভেতরে সিএসএস লিখলে সেটা ইনটানাল সিএসএস। */
+        p{
+            background-color: grey;
+        }
+        li{
+            color: orange;
+        }
+        #Frist-Id{ /* কোন গ্রুপ এর প্রথম এলিমেন্ট কে ধরতে আইডি ব্যাবহার করা হয়। */
+            color: brown;
+        }
+        .Frist-Class{ /* কোন ট্যাগ কে নিদিষ্ট করে ধরার জন্য ক্লাস ব্যাবহার করা হয়। */
+            text-align: center; /* (text-align: ;)ব্লোক লেভেলের কোন লেখাকে মাঝে/প্রথমে/শেষে নিয়ে যেতে ব্যাবহার করা হয়।(justify) দিলে লেখা গুলো সমান হয়ে যাবে। */
+            font-size: 25px; /* (font-size: ;)কোন লেখাকে বড়/ছোট করতে ব্যাবহার করা হয়। */
+            font-weight: bold; /* (font-weight: ;) কোন লেখাকে মোটা/চিকন করার জন্য। */
+        }
+        #Frist-peragraph{
+            font-size: 15px;
+        }
+        .Third-Peragraph{
+            background-color: coral;
+        }
+        .Forth-Peragraph{
+            font-weight: 900;
+        }
+        .Span-tag{
+            color: chartreuse;
+        }
+        .Blog{
+            background-color: aquamarine;
+            border: 1px solid black; /* (border: ;) কোন এলিমেন্ট এর বডার দেওয়ার জন্য। */
+            border-radius: 5px; /* (border-radius: ;) কোন এলিমেন্ট এর বডার কে স্মুথ করার জন্য। */
+            border-top: 0.5px; /* (border-top/bottom/left/right: ;) এভাবে কোন এলিমেন্ট কে ডানে/বামে/উপরে/নিচে  সিএসএস প্রোপারটি দেওয়া যায়। */
+            margin: 10px 10px 10px 10px; /* (margin-top/bottom/left/right: 10px 10px 10px 10px;) কোন এলিমেন্ট কে ডানে/বামে/উপরে/নিচে সরানোর জন্য।আর অনেক গুলা ভেল্যু থাকলে তা ঘড়ির কাটার দিকে কাজ করে। */
+            padding: 10px; /* (padding-top/bottom/left/right: 10px 10px 10px 10px;) কোন এলিমেন্ট কে ডানে/বামে/উপরে/নিচে ভেতর থেকে সরানোর জন্য।আর অনেক গুলা ভেল্যু থাকলে তা ঘড়ির কাটার দিকে কাজ করে। */
+        }
+        .Blog-Peragraph{
+            background-color: aquamarine;
+        }
+        .Display-Property-Second{
+            visibility: hidden; /* (visibility: hidden;) কোন এলিমেন্ট কে তার জায়গায় রেখে হাইড করার জন্য ব্যাবহার করা হয়। */
+            display: none;/* (display: none;) কোন এলিমেন্ট কে তার জায়গা থেকে সরে হাইড করার জন্য ব্যাবহার করা হয়। */
+        }
+        .Display-Property-Third{
+            background-color: tomato;
+            box-shadow: 10px 10px 2px gray; /* (box-shadow: 10px 10px 2px gray;) কোন এলিমেন্ট কে সেডো দেওয়ার জন্য এটি ব্যাবহার করা হয়। প্রথম ভেল্যু টা নিচে দ্বিতীয় ভেল্যু টা বামে এবং তূতীয় ভেল্যু টা সেডো টা কত গভীর হবে তার জন্য ব্যাবহার করা হয়।*/
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .Display-Property-First-Span{
+            border: 1px solid black;
+            display: block; /* (display: block;) এটি ব্যাবহার করা হয় কোন ইনলাইন এলিমেন্ট কে ব্লক লেভেল এলিমেন্ট এ রুপান্তরের জন্য।আবার (display:inline;) এটি ব্যাবহার করা হয় কোন ব্লক লেভেল এলিমেন্ট কে ইনলাইন লেভেল এলিমেন্ট এ রুপান্তরের জন্য।  */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- (Milestone-01,Module-02 ) -->
+
+    <h3 style="color: rgb(4, 255, 4);">Learning Basic Css</h3> <!-- এইচটিএমএল লাইনের মধ্যেই সিএসএস লিখলে সেটা ইনলাইন সিএসএস।(color: ;) এটি ব্যাবহার করা হয় লেখাকে কালার করার জন্য। -->
+    <h4 class="Frist-Class" style="background-color: gray;">Inline Css</h4> <!-- (background-color: ;) এটি ব্যাবহার করা হয় লেখার ব্যাগগ্রাউন্ড কে কালার করার জন্য। -->
+    <p id="Frist-Id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, saepe unde quae quibusdam deserunt dicta eos incidunt autem temporibus. Similique inventore accusantium iusto voluptates quia amet, eos a vero sed?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut consectetur at impedit corrupti ex. Iste molestiae quisquam hic possimus unde amet ratione officiis expedita adipisci voluptatem. Aliquid unde sapiente nisi molestias dignissimos, rem nihil, harum voluptas itaque eum nobis officiis!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores rerum earum non nobis dolores deleniti voluptatibus vitae officiis consequatur eaque, molestiae dicta. Eius quos ullam dolore, error dolorum perferendis cum ratione tenetur minus velit vero in ex molestias, amet assumenda adipisci quisquam, dolorem fugit aspernatur quas est delectus at deleniti!</p>
+    <ul>
+        <li>Inline-Css</li>
+        <li>Internal/Embedded-Css</li>
+        <li>External-Css</li>
+    </ul>
+
+    <p id="Frist-peragraph">My First line Css</p>
+    <p>My Second <span class="Span-tag">line Css</span></p> <!-- (Span) ট্যাগ টি ব্যাবহার করা হয় নিদ্রিষ্ট কোন কিছুকে সিএসএস দেওয়ার জন্য। -->
+    <p class="Third-Peragraph">My Third line Css</p>
+    <p class="Forth-Peragraph Third-Peragraph">My Four line Css</p> <!-- (class="Forth-Peragraph Third-Peragraph") কয়েকটি ক্লাস একই লাইনে ব্যাবহার করা যায়। -->
+    <p>My Five line Css</p>
+    <p>My Six line Css</p>
+
+    <div class="Blog">
+        <h3>My First Blog</h3>
+        <p class="Blog-Peragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita sed, animi, quod tempore placeat aut eveniet porro, minima nisi fugiat numquam at quam recusandae aperiam quibusdam dolorum ex voluptates!</p>
+    </div>
+    <div class="Blog">
+        <h3>My Second Blog</h3>
+        <p class="Blog-Peragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita sed, animi, quod tempore placeat aut eveniet porro, minima nisi fugiat numquam at quam recusandae aperiam quibusdam dolorum ex voluptates!</p>
+    </div>
+    <div class="Blog">
+        <h3>My Third Blog</h3>
+        <p class="Blog-Peragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita sed, animi, quod tempore placeat aut eveniet porro, minima nisi fugiat numquam at quam recusandae aperiam quibusdam dolorum ex voluptates!</p>
+    </div>
+
+    <p class="Display-Property-First">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="Display-Property-First-Span">Amet odit quidem</span> soluta consequatur animi nulla.</p>
+    <p class="Display-Property-Second">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odit quidem soluta consequatur animi nulla.</p>
+    <p class="Display-Property-Third">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odit quidem soluta consequatur animi nulla.</p>
+    <p class="Display-Property-Forth">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet odit quidem soluta consequatur animi nulla.</p>
+
+    <header class="Header">
+        Wellcome To my Website.
+    </header>
+    <span class="Inline-Block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore possimus mollitia adipisci aperiam a, consequatur amet, <span class="veniam">veniam nam accusamus, blanditiis impedit quos laboriosam vitae quibusdam</span> suscipit eum? Quos veniam cum adipisci nisi voluptate, <span class="necessit">necessitatibus, iste atque consectetur quo veritatis minus,</span> aliquid debitis non. Quo quisquam quia mollitia repellendus laboriosam hic!</span>
+
+</body>
+</html>

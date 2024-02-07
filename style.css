@@ -1,0 +1,16 @@
+.Header{
+    height: 300px;
+    color: white;
+    background-color: bisque;
+    background-image: url(../); /* (background-image: url(../);) এটি ব্যাবহার করা হয় ব্যাকগ্রাউন্ড ইমেজকে অন্য ফোল্ডার থেকে সিলেক্ট করার জন্য। */
+    background-image: url(img/wallpaperflare.com_wallpaper\(7\).jpg); /* (background-image: url(); এটি ব্যাবহার করা হয় ব্যাকগ্রাউন্ড এ ইমেজ বসানোর জন্য।) */
+    background-repeat: no-repeat; /* (background-repeat: no-repeat;) এটি ব্যাবহার করা হয় ব্যাকগ্রাউন্ড এর ইমেজ যেন রিপিট না হয় তার জন্য। */
+    background-repeat: repeat-x; /* (background-repeat: repeat-x;) এটি ব্যাবহার করা হয় ব্যাকগ্রাউন্ড এর ইমেজ কে (x) অক্ষ বরাবর রিপিট করার জন্য (repeat-x) ব্যাবহার করা হয় ব্যাকগ্রাউন্ড এর ইমেজ কে (y) অক্ষ বরাবর রিপিট করার জন্য। */
+    background-size: cover; /* (background-size: cover;) এটি ব্যাবহার করা হয় ব্যাকগ্রাউন্ড ইমেজকে পুরো জায়গা জুড়ে বসাতে। */
+    background-size: contain; /* (background-size: contain;) এটি ব্যাবহার করা হয় ব্যাকগ্রাউন্ড এর সাইজ যতটুকু ততটুকু জায়গায় বসাতে। */
+}
+.veniam{
+    border: 1px solid black;
+    display: inline-block; /* (display: inline-block;) এটি ব্যাবহার করা হয় কোন  ইনলাইন এলিমেন্ট কে ইনলাইনে রেখেই ব্লক এলিমেন্ট এর পোপারটি দেওয়ার জন্য। */
+    height: 25px;
+}
